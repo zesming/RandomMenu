@@ -10,27 +10,17 @@ import XCTest
 @testable import RandomMenu
 
 class RandomMenuTests: XCTestCase {
+    // MARK: RandomMenu Tests
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    // Tests to confirm that the RMDish initializer returns when no name is provided. 
+    func testRMDishInitialization() {
+        // Success case.
+        let potentialItem = RMDish(name: "宫爆鸡丁", dishType: RMDish.DishType.Breakfast, recipe: "")
+        XCTAssertNotNil(potentialItem)
+        
+        // Failure cases.
+        let noName = RMDish(name: "", dishType: RMDish.DishType.Lunch, recipe: "")
+        XCTAssertNil(noName, "Empty name is invalid")        
     }
     
 }

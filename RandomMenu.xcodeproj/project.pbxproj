@@ -13,6 +13,10 @@
 		A5765D1E1D31423F008D6955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5765D1D1D31423F008D6955 /* Assets.xcassets */; };
 		A5765D211D31423F008D6955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5765D1F1D31423F008D6955 /* LaunchScreen.storyboard */; };
 		A5765D2C1D314240008D6955 /* RandomMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5765D2B1D314240008D6955 /* RandomMenuTests.swift */; };
+		A5C1F7C91D3166740061EEF7 /* RMDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C1F7C81D3166740061EEF7 /* RMDish.swift */; };
+		A5C501E41D31594B007A06AF /* RMMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C501E31D31594B007A06AF /* RMMenuTableViewController.swift */; };
+		A5C501E61D31595C007A06AF /* RMKnownDishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C501E51D31595C007A06AF /* RMKnownDishesTableViewController.swift */; };
+		A5C501E81D315975007A06AF /* RMNewDishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C501E71D315975007A06AF /* RMNewDishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		A5765D271D314240008D6955 /* RandomMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5765D2B1D314240008D6955 /* RandomMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMenuTests.swift; sourceTree = "<group>"; };
 		A5765D2D1D314240008D6955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C1F7C81D3166740061EEF7 /* RMDish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDish.swift; sourceTree = "<group>"; };
+		A5C501E31D31594B007A06AF /* RMMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMMenuTableViewController.swift; sourceTree = "<group>"; };
+		A5C501E51D31595C007A06AF /* RMKnownDishesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMKnownDishesTableViewController.swift; sourceTree = "<group>"; };
+		A5C501E71D315975007A06AF /* RMNewDishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMNewDishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,11 @@
 			children = (
 				A5765D161D31423F008D6955 /* AppDelegate.swift */,
 				A5765D181D31423F008D6955 /* ViewController.swift */,
-				A5765D1A1D31423F008D6955 /* Main.storyboard */,
 				A5765D1D1D31423F008D6955 /* Assets.xcassets */,
-				A5765D1F1D31423F008D6955 /* LaunchScreen.storyboard */,
 				A5765D221D31423F008D6955 /* Info.plist */,
+				A5C1F7C41D3165A90061EEF7 /* Storyboards */,
+				A5C1F7C31D3165950061EEF7 /* Controllers */,
+				A5C1F7C51D3165BA0061EEF7 /* Models */,
 			);
 			path = RandomMenu;
 			sourceTree = "<group>";
@@ -94,6 +103,33 @@
 				A5765D2D1D314240008D6955 /* Info.plist */,
 			);
 			path = RandomMenuTests;
+			sourceTree = "<group>";
+		};
+		A5C1F7C31D3165950061EEF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5C501E31D31594B007A06AF /* RMMenuTableViewController.swift */,
+				A5C501E51D31595C007A06AF /* RMKnownDishesTableViewController.swift */,
+				A5C501E71D315975007A06AF /* RMNewDishViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A5C1F7C41D3165A90061EEF7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A5765D1A1D31423F008D6955 /* Main.storyboard */,
+				A5765D1F1D31423F008D6955 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5C1F7C51D3165BA0061EEF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5C1F7C81D3166740061EEF7 /* RMDish.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C501E61D31595C007A06AF /* RMKnownDishesTableViewController.swift in Sources */,
+				A5C501E41D31594B007A06AF /* RMMenuTableViewController.swift in Sources */,
 				A5765D191D31423F008D6955 /* ViewController.swift in Sources */,
 				A5765D171D31423F008D6955 /* AppDelegate.swift in Sources */,
+				A5C1F7C91D3166740061EEF7 /* RMDish.swift in Sources */,
+				A5C501E81D315975007A06AF /* RMNewDishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -280,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -320,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
