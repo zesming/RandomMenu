@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A5765D171D31423F008D6955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5765D161D31423F008D6955 /* AppDelegate.swift */; };
-		A5765D191D31423F008D6955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5765D181D31423F008D6955 /* ViewController.swift */; };
 		A5765D1C1D31423F008D6955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5765D1A1D31423F008D6955 /* Main.storyboard */; };
 		A5765D1E1D31423F008D6955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5765D1D1D31423F008D6955 /* Assets.xcassets */; };
 		A5765D211D31423F008D6955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5765D1F1D31423F008D6955 /* LaunchScreen.storyboard */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		A5765D131D31423F008D6955 /* RandomMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5765D161D31423F008D6955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A5765D181D31423F008D6955 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A5765D1B1D31423F008D6955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5765D1D1D31423F008D6955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5765D201D31423F008D6955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				A5765D161D31423F008D6955 /* AppDelegate.swift */,
-				A5765D181D31423F008D6955 /* ViewController.swift */,
 				A5765D1D1D31423F008D6955 /* Assets.xcassets */,
 				A5765D221D31423F008D6955 /* Info.plist */,
 				A5C1F7C41D3165A90061EEF7 /* Storyboards */,
@@ -238,7 +235,6 @@
 			files = (
 				A5C501E61D31595C007A06AF /* RMKnownDishesTableViewController.swift in Sources */,
 				A5C501E41D31594B007A06AF /* RMMenuTableViewController.swift in Sources */,
-				A5765D191D31423F008D6955 /* ViewController.swift in Sources */,
 				A5765D171D31423F008D6955 /* AppDelegate.swift in Sources */,
 				A5C1F7C91D3166740061EEF7 /* RMDish.swift in Sources */,
 				A5C501E81D315975007A06AF /* RMNewDishViewController.swift in Sources */,
