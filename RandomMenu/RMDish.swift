@@ -9,21 +9,28 @@
 import Foundation
 
 class RMDish {
-    // MARK: Properties
-    var name: String
     enum DishType {
         case Breakfast
         case Lunch
         case Dinner
     }
+    enum AvailableType {
+        case Single
+        case Couple
+        case Family
+    }
+    
+    // MARK: Properties
+    var name: String
+    var dishType: DishType
+    var availableType: AvailableType
     var recipe: String
     
-    private
-    var dishType: DishType
-    
-    init?(name: String, dishType: RMDish.DishType, recipe: String) {
+    // MARK: Initializer
+    init?(name: String, dishType: RMDish.DishType, availableType: RMDish.AvailableType, recipe: String) {
         self.name = name
         self.dishType = dishType
+        self.availableType = availableType
         self.recipe = recipe
         
         if name.isEmpty {
